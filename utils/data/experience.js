@@ -1,20 +1,26 @@
 export const experiences = [
   {
     id: 1,
-    title: 'Software Engineer I',
-    company: "Teton Private Ltd.",
-    duration: "(Jan 2022 - Present)"
+    title: 'IoT Systems and Data Collection Developer',
+    company: "High Performance Computing Systems Laboratory, UFMS",
+    duration: "(2024 - Present)"
   },
   {
     id: 2,
-    title: "FullStack Developer",
-    company: "Fiverr (freelance)",
-    duration: "(Jun 2021 - Jan 2022)"
+    title: "Researcher, Developer & Scholarship Holder",
+    company: "PET Saúde Digital - CNPq, UFMS",
+    duration: "(2025 - Present)"
   },
   {
     id: 3,
-    title: "Self Employed",
-    company: "Code and build something in everyday.",
-    duration: "(Jan 2018 - Present)"
+    title: "Volunteer Researcher",
+    company: "Scientific Initiation - CNPq, UFMS",
+    duration: "(2025 - 2026)"
+  },
+  {
+    id: 4,
+    title: "DRONE Participant",
+    company: "Ararabots, UFMS",
+    duration: "(2024 - Present)"
   }
 ]

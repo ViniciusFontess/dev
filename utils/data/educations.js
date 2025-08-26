@@ -1,20 +1,14 @@
 export const educations = [
   {
     id: 1,
-    title: "Bachelor Degree",
-    duration: "2020 - Present",
-    institution: "National University of Bangladesh",
+    title: "Computer Engineering",
+    duration: "2024 - 2028",
+    institution: "Federal University of Mato Grosso do Sul (Campo Grande - UFMS)",
   },
   {
     id: 2,
-    title: "Higher Secondary Certificate",
-    duration: "2018 - 2020",
-    institution: "Noakhali Islamia Kamil Madrasah",
-  },
-  {
-    id: 3,
-    title: "Secondary School Certificate",
-    duration: "2008 - 2018",
-    institution: "Baitus Saif Islamia Madrasah",
+    title: "High School",
+    duration: "2019 - 2021",
+    institution: "De Angeles School (Araçatuba - São Paulo)",
   }
 ]
