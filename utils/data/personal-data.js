@@ -12,6 +12,6 @@ export const personalData = {
   twitter: 'https://twitter.com/vinifnts',
   stackOverflow: 'https://stackoverflow.com/users/30912621/vinicius-fontes-de-andrade',
   leetcode: "https://leetcode.com/u/viniciusfontess/",
-  devUsername: "vinizera",
+  devUsername: "viniciusfontes",
   resume: "https://drive.google.com/file/d/1zPIX8BIl4GUQLICF3Ex9xmBbxJxcxfgp/view?usp=sharing"
 }

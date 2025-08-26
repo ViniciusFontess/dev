@@ -1,3 +1,5 @@
+"use client";
+
 import { personalData } from "@/utils/data/personal-data";
 import AboutSection from "./components/homepage/about";
 import Blog from "./components/homepage/blog";
@@ -7,26 +9,36 @@ import Experience from "./components/homepage/experience";
 import HeroSection from "./components/homepage/hero-section";
 import Projects from "./components/homepage/projects";
 import Skills from "./components/homepage/skills";
+import { useEffect, useState } from "react";
 
-async function getData() {
-  const res = await fetch(`https://dev.to/api/articles?username=${personalData.devUsername}`)
+// Force dynamic rendering
+export const dynamic = 'force-dynamic';
 
-  if (!res.ok) {
-    throw new Error('Failed to fetch data')
-  }
+export default function Home() {
+  const [blogs, setBlogs] = useState([]);
 
-  const data = await res.json();
+  useEffect(() => {
+    const getData = async () => {
+      try {
+        const res = await fetch(`https://dev.to/api/articles?username=${personalData.devUsername}`);
 
-  const filtered = data.filter((item) => item?.cover_image).sort(() => Math.random() - 0.5);
+        if (!res.ok) {
+          throw new Error('Failed to fetch data');
+        }
 
-  return filtered;
-};
-
-export default async function Home() {
-  const blogs = await getData();
+        const data = await res.json();
+        const filtered = data.filter((item) => item?.cover_image).sort(() => Math.random() - 0.5);
+        setBlogs(filtered);
+      } catch (error) {
+        console.error('Error fetching blogs:', error);
+        setBlogs([]);
+      }
+    };
+    getData();
+  }, []);
 
   return (
-    <div suppressHydrationWarning >
+    <div suppressHydrationWarning>
       <HeroSection />
       <AboutSection />
       <Experience />
@@ -36,5 +48,5 @@ export default async function Home() {
       <Blog blogs={blogs} />
       <ContactSection />
     </div>
-  )
+  );
 };

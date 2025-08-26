@@ -7,5 +7,5 @@ export const contactsData = {
     linkedIn: 'https://www.linkedin.com/in/vinícius-fontes/',
     twitter: 'https://twitter.com/vinifnts',
     stackOverflow: 'https://stackoverflow.com/users/30912621/vinicius-fontes-de-andrade',
-    devUsername: "vinizera"
+    devUsername: "viniciusfontes"
 }

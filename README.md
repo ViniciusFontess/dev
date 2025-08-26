@@ -1,64 +1,52 @@
-<p align="center" width="100%">
-    <img height="100" src="https://github.com/said7388/developer-portfolio/assets/77630868/c0064908-cd5f-4751-a77c-eba90a62b55c">
-</p>
+# Portfolio de Vinicius Fontes de Andrade
+
+## 🚀 Portfolio Profissional Desenvolvido com Next.js
+
+Este é meu portfolio pessoal desenvolvido com Next.js 15, React 19 e Tailwind CSS. O projeto apresenta minhas habilidades, experiências, projetos e educação de forma moderna e responsiva.
 
 ---
 
-# [Built Portfolio With GitHub ](https://github.com/said7388/github-portfolio)
+# Demonstração :movie_camera:
+
+![](./Downloads/Downloads Google/site.png)
+
+## Visualize o site ao vivo [aqui](https://viniciusfandrade.vercel.app/).
 
 ---
 
-# Developer Portfolio
+## Índice :scroll:
 
-#### Are you struggling to create a professional portfolio website? Look no further! You can use the Developer Portfolio template and create your very own personalized portfolio today! My website is designed to be user-friendly and easily customizable, making it perfect for both developers and freelancers.
-
----
-
-# Demo :movie_camera:
-
-![](./public/image/screen.png)
-
-## View live preview [here](https://abusaid.netlify.app/).
+- [Seções](#seções-bookmark)
+- [Demonstração](#demonstração-movie_camera)
+- [Instalação](#instalação-arrow_down)
+- [Começando](#começando-dart)
+- [Uso](#uso-joystick)
+- [Deploy](#deploy-rocket)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas-package)
 
 ---
 
-## Table of Contents :scroll:
+# Seções :bookmark:
 
-- [Sections](#sections-bookmark)
-- [Demo](#demo-movie_camera)
-- [Installation](#installation-arrow_down)
-- [Getting Started](#getting-started-dart)
-- [Usage](#usage-joystick)
-- [Deployment](#deployment-rocket)
-- [Tutorials](#tutorials-wrench)
-  - [Gmail App Password Setup](#gmail-app-password-setup)
-  - [Create a Telegram Bot](#create-a-telegram-bot)
-  - [Fetching Blog from dev.to](#fetching-blog-from-devto)
-- [Packages Used](#packages-used-package)
+- **SEÇÃO HERO** - Apresentação inicial com animação
+- **SOBRE MIM** - Informações pessoais e profissionais
+- **EXPERIÊNCIA** - Histórico profissional
+- **HABILIDADES** - Tecnologias e ferramentas
+- **PROJETOS** - Portfolio de trabalhos realizados
+- **EDUCAÇÃO** - Formação acadêmica
+- **BLOG** - Artigos e posts do dev.to
+- **CONTATOS** - Formulário de contato e redes sociais
 
 ---
 
-# Sections :bookmark:
+# Instalação :arrow_down:
 
-- HERO SECTION
-- ABOUT ME
-- EXPERIENCE
-- SKILLS
-- PROJECTS
-- EDUCATION
-- BLOG
-- CONTACTS
-
----
-
-# Installation :arrow_down:
-
-### You will need to download Git and Node to run this project
+### Você precisará ter Git e Node.js instalados
 
 - [Git](https://git-scm.com/downloads)
-- [Node](https://nodejs.org/en/download/)
+- [Node.js](https://nodejs.org/en/download/)
 
-#### Make sure you have the latest version of both Git and Node on your computer.
+#### Certifique-se de ter as versões mais recentes:
 
 ```bash
 node --version
@@ -67,209 +55,128 @@ git --version
 
 ## <br />
 
-# Getting Started :dart:
+# Começando :dart:
 
-### Fork and Clone the repo
-
-To Fork the repo click on the fork button at the top right of the page. Once the repo is forked open your terminal and perform the following commands
+### Clone o repositório
 
 ```bash
-git clone https://github.com/<YOUR GITHUB USERNAME>/developer-portfolio.git
+git clone https://github.com/ViniciusFontess/portfolio.git
 
-cd developer-portfolio
+cd portfolio/portfolio_1
 ```
 
-### Install packages from the root directory
+### Instale as dependências
 
 ```bash
 npm install
-# or
+# ou
 yarn install
 ```
 
-Then, run the development server:
+### Execute o servidor de desenvolvimento
 
 ```bash
 npm run dev
-# or
+# ou
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver o resultado.
 
 ---
 
-### Running with Docker Compose
+### Executando com Docker Compose
 
-1. **Build Docker Image and Run Container**:
+1. **Build da Imagem Docker e Execução do Container**:
     ```bash
     docker-compose up --build
     ```
 
-2. **Access the Application**:
-    Visit [http://localhost:3000](http://localhost:3000) in your web browser to view the running application.
+2. **Acesse a Aplicação**:
+    Visite [http://localhost:3000](http://localhost:3000) no seu navegador.
 
 ---
 
-### Building the Docker Image
+# Uso :joystick:
 
-1. **Build the Docker Image using Dockerfile.dev**:
-
-    ```bash
-    docker build -t nextjs-app -f Dockerfile.dev .
-    ```
-
-2. **Running the Docker Container**:
-
-    ```bash
-    docker run -p 3000:3000 nextjs-app
-    ```
-
-3. **Access the Application**:
-    Visit [http://localhost:3000](http://localhost:3000) in your web browser to view the running application.
-
----
-
-# Usage :joystick:
-
-Please create a new `.env` file from `.env.example` file.
-
-Eg:
+Crie um arquivo `.env` baseado no `.env.example`:
 
 ```env
-NEXT_PUBLIC_GTM =
-NEXT_PUBLIC_APP_URL =
-TELEGRAM_BOT_TOKEN =
-TELEGRAM_CHAT_ID =
-GMAIL_PASSKEY =
-EMAIL_ADDRESS =
+NEXT_PUBLIC_GTM = GTM-XXXXXXX
+NEXT_PUBLIC_APP_URL = https://viniciusfandrade.vercel.app
+EMAIL_ADDRESS = vinicius.fontes@ufms.br
 ```
 
-### Then, Customize data in the `utils/data` [folder](https://github.com/said7388/developer-portfolio/tree/main/utils/data).
+### Personalize os dados na pasta `utils/data`
 
-Eg:
+Exemplo do arquivo `personal-data.js`:
 
 ```javascript
 export const personalData = {
-  name: "ABU SAID",
+  name: "Vinicius Fontes de Andrade",
   profile: "/profile.png",
-  designation: "Full-Stack Software Developer",
-  description: "My name is ABU SAID....",
-  email: "abusaid7388@gmail.com",
-  phone: "+8801608797655",
-  address: "Dhaka, Bangladesh",
-  github: "https://github.com/said7388",
-  facebook: "https://www.facebook.com/abusaid.riyaz/",
-  linkedIn: "https://www.linkedin.com/in/abu-said-bd/",
-  twitter: "https://twitter.com/said7388",
-  stackOverflow: "https://stackoverflow.com/users/16840768/abu-said",
-  leetcode: "https://leetcode.com/said3812/",
-  devUsername: "said7388",
+  designation: "Computer Engineering",
+  description: "I am a Computer Engineering student at the Federal University of Mato Grosso do Sul (UFMS) with extensive experience in software development, computer vision, and robotics. I am proficient in languages ​​such as Python, C/C++, Java, and JavaScript, with a focus on computational optimization and artificial intelligence applications. I seek to apply my skills to challenging projects and contribute to the development of innovative technological solutions, with a strong interest in areas such as IoT, BLE, and machine learning.",
+  email: "vinicius.fontes@ufms.br",
+  github: "https://github.com/ViniciusFontess",
+  linkedIn: "https://linkedin.com/in/vinicius-fontes",
+  devUsername: "viniciusfontes",
   resume: "...",
 };
 ```
 
-`devUsername` is used for fetching blog posts from `dev.to`.
+---
+
+# Deploy :rocket:
+
+## Deploy no Vercel:
+
+1. **Faça login** no [Vercel](https://vercel.com/)
+2. Clique em **"New Project"**
+3. Selecione o repositório do GitHub e clique em **Import**
+4. Configure as variáveis de ambiente no dashboard do Vercel
+5. Clique em **Deploy**
+
+O Vercel detectará automaticamente o app Next.js e fará o build.
 
 ---
 
-# Deployment :rocket:
+# Tecnologias Utilizadas :package:
 
-Deploying the app to platforms like Vercel or Netlify is quick and easy.
-
-## Deploying to Vercel:
-
-1. **Sign up or log in** to [Vercel](https://vercel.com/).
-2. Once logged in, click on **"New Project"**.
-3. Select your **GitHub repo** (the one that contains your forked project) and click **Import**.
-4. Configure your environment variables in the Vercel dashboard by adding each key from your `.env` file.
-   - E.g., `NEXT_PUBLIC_GTM`, `NEXT_PUBLIC_APP_URL`, `TELEGRAM_BOT_TOKEN`, etc.
-5. Click on **Deploy**. Vercel will automatically detect your Next.js app and build it.
-6. Once the deployment is complete, you can visit your live website!
-
-### Updating After Deployment
-
-Whenever you push changes to your GitHub repo, Vercel will automatically redeploy the app, keeping your portfolio up-to-date.
-
-## Deploying to Netlify:
-
-1. **Sign up or log in** to [Netlify](https://www.netlify.com/).
-2. In the **Netlify Dashboard**, click **"New site from Git"**.
-3. Connect your **GitHub** account and select your repo.
-4. Configure your environment variables by going to **Site Settings > Build & Deploy > Environment** and adding keys from your `.env` file.
-5. Click **Deploy Site**. Netlify will build and deploy your portfolio.
+|      Tecnologia        |    Versão    |
+| :--------------------: | :----------: |
+|         Next.js        |    15.5.0    |
+|         React          |    19.1.1    |
+|       React-DOM        |    19.1.1    |
+|      Tailwind CSS     |    latest    |
+|      lottie-react      |    2.4.1     |
+|   react-fast-marquee   |    1.6.2     |
+|      react-icons       |    4.11.0    |
+|     react-toastify     |    10.0.4    |
+|         axios          |    1.6.8     |
+|       nodemailer       |    6.9.15    |
+|          sass          |    1.69.5    |
 
 ---
 
-# Tutorials :wrench:
+## Características Especiais
 
-## Gmail App Password Setup
-
-1. **Log in to your Google Account** at [https://myaccount.google.com/](https://myaccount.google.com/).
-2. Navigate to **Security** from the left sidebar.
-3. Scroll down to the **"Signing in to Google"** section and make sure **2-Step Verification** is turned ON.
-4. Once 2-Step Verification is enabled, you'll see an option for **App Passwords**.
-5. Click on **App Passwords**. You may need to enter your Google account password again.
-6. In the **Select app** dropdown, choose "Mail", and for **Select device**, choose "Other (Custom name)" and name it appropriately (e.g., "Portfolio").
-7. Click **Generate**. A 16-character app password will be displayed. Save this password for later use in your environment variables (e.g., `GMAIL_PASSKEY`).
-
-## Create a Telegram Bot
-
-1. **Open Telegram** and search for the user **@BotFather**.
-2. Start a chat with BotFather and use the `/newbot` command to create a new bot.
-3. Choose a name for your bot.
-4. Set a unique username for your bot (must end with `bot`, e.g., `PortfolioAssistantBot`).
-5. Once your bot is created, BotFather will send you a **Token**. Save this token, as you will need it for your environment variables (e.g., `TELEGRAM_BOT_TOKEN`).
-6. To get your chat ID:
-   - Open your bot in Telegram and send it a message.
-   - Visit the following URL in your browser, replacing `BOT_TOKEN` with your actual bot token:  
-     `https://api.telegram.org/bot<BOT_TOKEN>/getUpdates`
-   - Look for the `chat` object in the response, which contains your **chat ID** (you can use this value for `TELEGRAM_CHAT_ID`).
-
-## Fetching Blog from dev.to
-
-To display your blog posts from dev.to on the portfolio:
-
-1. Set your `devUsername` in the `utils/data.js` file to your dev.to username.
-2. The application will automatically fetch your latest blog posts and display them in the **BLOG** section.
-3. Ensure your blogs are publicly visible on dev.to, and the application will fetch them using the dev.to API.
+- ✅ **Responsivo** - Funciona perfeitamente em todos os dispositivos
+- ✅ **Performance Otimizada** - Build otimizado com Next.js 15
+- ✅ **SEO Friendly** - Meta tags e estrutura otimizada
+- ✅ **Animações Suaves** - Lottie animations e transições CSS
+- ✅ **Formulário de Contato** - Sistema de envio de emails
+- ✅ **Blog Integrado** - Fetch automático de posts do dev.to
+- ✅ **Docker Support** - Containerização para deploy
 
 ---
 
-# Packages Used :package:
+## Contato
 
-|   Used Package List    |
-| :--------------------: |
-|    @emailjs/browser    |
-|  @next/third-parties   |
-|         axios          |
-|      lottie-react      |
-|          next          |
-|       nodemailer       |
-|         react          |
-|       react-dom        |
-|   react-fast-marquee   |
-| react-google-recaptcha |
-|      react-icons       |
-|     react-toastify     |
-|         sharp          |
-|          sass          |
-|      tailwindcss       |
+- **GitHub**: [@ViniciusFontess](https://github.com/ViniciusFontess)
+- **Email**: vinicius.fontes@ufms.br
+- **LinkedIn**: [Vinicius Fontes](https://linkedin.com/in/vinicius-fontes)
 
 ---
 
-# FAQ:
-
-1. For those facing the issue of "`next` is not recognized as an internal or external command, operable program or batch file."
-
-Run the following command:
-
-```bash
-
-npm install -g next
-
-```
-
-This installs Next.js globally
-
-then do the usual `npm run dev`
+⭐ Não se esqueça de dar uma estrela se este projeto te ajudou!
