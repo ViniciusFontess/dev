@@ -23,12 +23,12 @@ function HeroSection() {
 
       <div className="grid grid-cols-1 items-start lg:grid-cols-2 lg:gap-12 gap-y-8 w-full max-w-7xl">
         <div className="order-2 lg:order-1 flex flex-col items-start justify-center p-2 pb-20 md:pb-10 lg:pt-10">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-8 sm:leading-10 text-white md:font-extrabold lg:text-[2.6rem] lg:leading-[3.5rem] break-words">
+          <h1 className="text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-6 xs:leading-7 sm:leading-8 md:leading-9 lg:leading-10 xl:leading-[3.5rem] text-white md:font-extrabold break-words hyphens-auto">
             Hello, <br />
             This is {' '}
-            <span className="text-pink-500">{personalData.name}</span>
+            <span className="text-pink-500 break-words">{personalData.name}</span>
             {` , I'm a Professional `}
-            <span className="text-[#16f2b3]">{personalData.designation}</span>
+            <span className="text-[#16f2b3] break-words">{personalData.designation}</span>
             .
           </h1>
 
@@ -86,7 +86,7 @@ function HeroSection() {
           </div>
 
         </div>
-        <div className="order-1 lg:order-2 from-[#0d1224] border-[#1b2c68a0] relative rounded-lg border bg-gradient-to-r to-[#0a0d37] mx-2 sm:mx-0">
+        <div className="order-1 lg:order-2 from-[#0d1224] border-[#1b2c68a0] relative rounded-lg border bg-gradient-to-r to-[#0a0d37] mx-0 w-full max-w-full">
           <div className="flex flex-row">
             <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-pink-500 to-violet-600"></div>
             <div className="h-[1px] w-full bg-gradient-to-r from-violet-600 to-transparent"></div>
@@ -98,8 +98,8 @@ function HeroSection() {
               <div className="h-2 w-2 sm:h-3 sm:w-3 rounded-full bg-green-200"></div>
             </div>
           </div>
-          <div className="overflow-hidden border-t-[2px] border-indigo-900 px-3 sm:px-4 lg:px-8 py-3 sm:py-4 lg:py-8">
-            <code className="font-mono text-xs sm:text-sm lg:text-base">
+          <div className="overflow-x-auto border-t-[2px] border-indigo-900 px-3 sm:px-4 lg:px-8 py-3 sm:py-4 lg:py-8">
+            <code className="font-mono text-xs sm:text-sm lg:text-base whitespace-nowrap block min-w-max">
               <div className="blink">
                 <span className="mr-1 sm:mr-2 text-pink-500">const</span>
                 <span className="mr-1 sm:mr-2 text-white">coder</span>
@@ -109,7 +109,7 @@ function HeroSection() {
               <div>
                 <span className="ml-2 sm:ml-4 lg:ml-8 mr-1 sm:mr-2 text-white">name:</span>
                 <span className="text-gray-400">{`'`}</span>
-                <span className="text-amber-300">Vinicius Fontes de Andrade</span>
+                <span className="text-amber-300">Vinicius Fontes</span>
                 <span className="text-gray-400">{`',`}</span>
               </div>
               <div className="ml-2 sm:ml-4 lg:ml-8 mr-1 sm:mr-2">
@@ -119,15 +119,11 @@ function HeroSection() {
                 <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">NextJS</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Redux</span>
+                <span className="text-amber-300">Python</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Express</span>
+                <span className="text-amber-300">C/C++</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">NestJS</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">MySql</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">MongoDB</span>
+                <span className="text-amber-300">Java</span>
                 <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">Docker</span>
                 <span className="text-gray-400">{"', '"}</span>

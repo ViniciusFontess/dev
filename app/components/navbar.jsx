@@ -17,8 +17,8 @@ function Navbar() {
         <div className="flex flex-shrink-0 items-center">
           <Link
             href="/"
-            className="text-[#16f2b3] text-xl sm:text-2xl lg:text-3xl font-bold">
-            VINICIUS FONTES DE ANDRADE
+            className="text-[#16f2b3] text-sm xs:text-base sm:text-xl lg:text-2xl xl:text-3xl font-bold truncate max-w-[200px] xs:max-w-[250px] sm:max-w-none">
+            VINICIUS FONTES
           </Link>
         </div>
 

@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'xs': '475px',
+        '4k': '1980px',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -21,12 +25,6 @@ module.exports = {
           xl: "4rem",
           "2xl": "4rem",
           "3xl": "5rem",
-        },
-      },
-
-      extend: {
-        screens: {
-          "4k": "1980px",
         },
       },
     },

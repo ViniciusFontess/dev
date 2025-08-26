@@ -6,9 +6,6 @@ Este é meu portfolio pessoal desenvolvido com Next.js 15, React 19 e Tailwind C
 
 ---
 
-# Demonstração :movie_camera:
-
-![](./Downloads/Downloads Google/site.png)
 
 ## Visualize o site ao vivo [aqui](https://viniciusfandrade.vercel.app/).
 
